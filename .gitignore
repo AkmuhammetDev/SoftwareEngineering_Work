@@ -1,0 +1,21 @@
+# Logs 
+*.log 
+*.tmp 
+Режим вывода команд на экран (ECHO) включен.
+# OS files 
+Thumbs.db 
+.DS_Store 
+Режим вывода команд на экран (ECHO) включен.
+# IDE files 
+.vscode/ 
+.idea/ 
+*.suo 
+Режим вывода команд на экран (ECHO) включен.
+# Python 
+__pycache__/ 
+*.pyc 
+Режим вывода команд на экран (ECHO) включен.
+# Temporary files 
+.temp/ 
+temp/ 
+Режим вывода команд на экран (ECHO) включен.
