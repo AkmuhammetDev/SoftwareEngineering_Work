@@ -1,0 +1,16 @@
+# Logs 
+*.log 
+*.tmp 
+# OS files 
+Thumbs.db 
+.DS_Store 
+# IDE files 
+.vscode/ 
+.idea/ 
+*.suo 
+# Python 
+__pycache__/ 
+*.pyc 
+# Temporary files 
+.temp/ 
+temp/ 
