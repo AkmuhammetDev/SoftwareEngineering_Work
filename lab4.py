@@ -1,2 +1,8 @@
-a = [12, 54, 32, 57, 843, 2346, 765, 75, 25, 234, 756, 23]
-print(a[2:6])
+def personal_info(name, age, company = "unnamed"):
+    print(f"Имя: {name} Возраст: {age} Компания: {company}")
+
+tom = ("Григорий", 22)
+personal_info(*tom)
+
+bob = ("Георгий", 41, "Yandex")
+personal_info(*bob)

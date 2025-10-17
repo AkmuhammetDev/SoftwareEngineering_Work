@@ -1,18 +1,14 @@
-list_1 = [1, 1, 3, 3, 1]
-list_2 = [5, 5, 5, 5, 5, 5, 5]
-list_3 = [2, 2, 1, 2, 2, 5, 6, 7, 1, 3, 2, 2]
+def find_student_grades(students, grades, target_student):
+    if target_student in students:
+        index = students.index(target_student)
+        return grades[index]
+    else:
+        return "Студент не найден"
 
-def create_set(numbers):
-    result_set = set()
-    for num in set(numbers):
-        count = numbers.count(num)
-        for i in range(1, count + 1):
-            if i == 1:
-                result_set.add(num)
-            else:
-                result_set.add(str(num) * i)
-    return result_set
+students = ("Анна", "Борис", "Виктория", "Григорий")
+grades = [85, 92, 78, 96]
 
-print(create_set(list_1))
-print(create_set(list_2))
-print(create_set(list_3))
+print(find_student_grades(students, grades, "Виктория"))
+print(find_student_grades(students, grades, "Борис"))
+print(find_student_grades(students, grades, "Дмитрий"))
+print(find_student_grades(students, grades, "Анна"))

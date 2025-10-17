@@ -1,12 +1,9 @@
-results = [10.2, 14.8, 19.3, 22.7, 12.5, 33.1, 38.9, 21.6, 26.4, 17.1, 30.2, 35.7, 16.9, 27.8, 24.5, 16.3, 18.7, 31.9, 12.9, 37.4]
+def remove_tuple_element(tuple_data, element):
+    lst = list(tuple_data)
+    if element in lst:
+        lst.remove(element)
+    return tuple(lst)
 
-sorted_results = sorted(results)
-
-best_three = sorted_results[:3]
-print(f"Три лучшие результата: {best_three}")
-
-worst_three = sorted_results[-3:]
-print(f"Три худшие результата: {worst_three}")
-
-from_10th = sorted_results[9:]
-print(f"Все результаты начиная с 10: {from_10th}")
+print(remove_tuple_element((1, 2, 3), 1))
+print(remove_tuple_element((1, 2, 3, 1, 2, 3, 4, 5, 2, 3, 4, 2, 4, 2), 3))
+print(remove_tuple_element((2, 4, 6, 6, 4, 2), 9))

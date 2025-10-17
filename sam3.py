@@ -1,23 +1,23 @@
-import math
+def count_numbers(text):
+    count_dict = {}
+    for char in text:
+        num = int(char)
+        if num in count_dict:
+            count_dict[num] += 1
+        else:
+            count_dict[num] = 1
 
-one = [12, 25, 3, 48, 71]
-two = [5, 18, 40, 62, 98]
-three = [4, 21, 37, 56, 84]
+    sorted_items = sorted(count_dict.items(), key=lambda x: (-x[1], x[0]))
+    top_three = dict(sorted_items[:3])
 
-all_sides = one + two + three
+    result = {}
+    for key in sorted(top_three.keys()):
+        result[key] = top_three[key]
 
-min_sides = sorted(all_sides)[:3]
-max_sides = sorted(all_sides)[-3:]
+    return result
 
-def triangle_area(a, b, c):
-    if a + b > c and a + c > b and b + c > a:
-        p = (a + b + c) / 2
-        return math.sqrt(p * (p - a) * (p - b) * (p - c))
-    else:
-        return None
 
-area_min = triangle_area(min_sides[0], min_sides[1], min_sides[2])
-area_max = triangle_area(max_sides[0], max_sides[1], max_sides[2])
-
-print("Площадь треугольника из минимальных сторон:", area_min)
-print("Площадь треугольника из максимальных сторон:", area_max)
+text = input()
+result_dict = count_numbers(text)
+for key in sorted(result_dict.keys()):
+    print(f"{key}: {result_dict[key]}")
