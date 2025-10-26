@@ -1,4 +1,3 @@
-input_string = "HelloWorld"
-result = tuple(input_string)
-print(result)
-print(list(result))
+f = open('input.txt', 'r')
+print(f.readlines())
+f.close()
