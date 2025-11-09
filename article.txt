@@ -1,9 +1,0 @@
-Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented and functional programming.
-
-Python was created by Guido van Rossum in the late 1980s as a successor to the ABC programming language. Python 2.0 was released in 2000 and Python 3.0 followed in 2008. Python consistently ranks as one of the most popular programming languages.
-
-Python is used extensively in data science, machine learning, artificial intelligence, web development, automation, and scientific computing. Its large standard library provides tools for many tasks and is often described as "batteries included".
-
-The language's core philosophy is summarized in the document The Zen of Python which includes aphorisms such as: Beautiful is better than ugly; Explicit is better than implicit; Simple is better than complex; Complex is better than complicated; Readability counts.
-
-Python interpreters are available for many operating systems. A global community of programmers develops and maintains CPython, the reference implementation of Python. It is free and open-source software under the Python Software Foundation license.
